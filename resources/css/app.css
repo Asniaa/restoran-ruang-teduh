@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --color-primary: #C5D89D;
+    /* Soft Sage */
+    --color-primary-rgb: 197, 216, 157;
+    --color-primary-hover: #B0C48A;
+
+    --color-secondary: #EDCFA9;
+    --color-secondary-rgb: 237, 207, 169;
+
+    --color-background-cream: #F1F3E0;
+    /* Light Eco Cream */
+    --color-surface-white: #FFFFFF;
+
+    --color-text-dark: #333333;
+    --color-text-medium: #666666;
+
+    /* Status Colors */
+    --color-status-success: #8AB081;
+    --color-status-warning: #D8A45E;
+    --color-status-danger: #E58E8E;
+}
+
+/* Custom Utilities */
+.btn-primary {
+    @apply bg-primary text-white px-6 py-2.5 rounded-xl font-semibold transition-all duration-200 hover:shadow-md active:transform active:scale-95;
+}
+
+.btn-secondary {
+    @apply bg-white text-text-dark border-2 border-primary/20 px-6 py-2.5 rounded-xl font-semibold transition-all duration-200 hover:bg-background-cream active:transform active:scale-95;
+}
+
+.btn-action-primary {
+    @apply bg-primary/20 text-primary px-4 py-1.5 rounded-lg font-medium text-sm transition-all hover:bg-primary hover:text-white;
+}
+
+.card {
+    @apply bg-white rounded-[2rem] p-8 shadow-sm border border-gray-100/50;
+}
+
+.input-field {
+    @apply w-full px-5 py-3.5 rounded-2xl border border-gray-100 bg-background-cream/50 focus:bg-white focus:border-primary/50 focus:ring-4 focus:ring-primary/10 outline-none transition-all;
+}
+
+.badge-status {
+    @apply px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider;
+}
