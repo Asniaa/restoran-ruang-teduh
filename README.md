@@ -78,10 +78,10 @@
    ```
 
 ## Kredensial Default (Seeder)
-- **Admin**: `admin@mail.com` / `password`
-- **Kasir**: `kasir@mail.com` / `password`
-- **Dapur**: `dapur@mail.com` / `password`
-- **Pelayan**: `pelayan@mail.com` / `password`
+- **Admin**: `admin@mail.com` / `password123`
+- **Kasir**: `kasir@mail.com` / `password123`
+- **Dapur**: `dapur@mail.com` / `password123`
+- **Pelayan**: `pelayan@mail.com` / `password123`
 
 ## Akses Pelanggan (Simulasi QR Code)
 Untuk mensimulasikan scan QR Code pelanggan di meja nomor 1, akses URL berikut:
